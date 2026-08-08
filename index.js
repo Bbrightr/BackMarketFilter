@@ -1,0 +1,1 @@
+import { smartPhones, laptops } from './data.js';
