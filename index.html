@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <title>BackMarketFilter</title>
 </head>
 <body>
     <div class="master-categories" id="master-categories">
     <p class="smartphone-category" id="smartphone-category">Smartphones</p>
-    <p class="laptop-category">Laptops</p>
+    <p class="laptop-category" id="laptop-category">Laptops</p>
     </div>
 
     <div class="default-modal-box" >
-        <div class="category-modal">
+        <div class="category-modal hide" id="smartphones-modal">
             <h5 class="modal-title">Categories</h5>
-            <div class="smartphones-modal" id="smartphones-modal">
+            <div class="smartphones-modal" >
                 <div class="sub-category">
                     <img src="img/iphones.png" alt="iPhones">
                     <p>iPhones</p>
@@ -32,7 +33,7 @@
             </div>
         </div>
 
-        <div class="category-modal">
+        <div class="category-modal hide" id="laptops-modal">
             <h5 class="modal-title">Categories</h5>
             <div class="laptops-modal">
                 <div class="sub-category">
@@ -51,36 +52,101 @@
         </div>
     </div>
 
-    <div>
+    <div class="hide">
         <div class="filter">
-            <p>Price</p>
-            <p>Model</p>
-            <p>Year</p>
+            <div class="filter-selector">
+                <label for="price"></label>
+                <select name="price" id="price">
+                    <!-- <optgroup label="Price"> -->
+                    <option value="low">Upto $100</option>
+                    <option value="high">Upto $500</option>
+                    <option value="high">Upto $1500</option>
+                </select>
+            </div>
+
+            <div class="filter-selector">
+                <label for="model"></label>
+                <select name="model" id="model">
+                    <!-- <optgroup label="Price"> -->
+                    <option value="iPhone13">iPhone 13</option>
+                    <option value="iPhone14">iPhone 14</option>
+                    <option value="iPhone15">iPhone 15</option>
+                </select>
+            </div>
+            
+            <div class="filter-selector">
+                <label for="year"></label>
+                <select name="year" id="year">
+                    <!-- <optgroup label="Price"> -->
+                    <option value="2026">Low to High</option>
+                    <option value="2025">High to Low</option>
+                    <option value="2024">High to Low</option>
+                </select>
+            </div>
         </div>
+
         <div class="product">
             <div class="product-card">
                 <img src="./img/iphone14.jpeg" alt="iPhone 14">
                 <h3>Product 1</h3>
-                <p><img>4.6/5(13575)</p>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <p>4.6/5(13575)</p>
+                </div>
                 <span>from</span>
-                <p>$999.99 </p>
-
+                <p class="product-price">$999.99 </p>
             </div>
+
             <div class="product-card">
                 <img src="./img/iphone14.jpeg" alt="iPhone 14">
                 <h3>Product 1</h3>
-                <p><img>4.6/5(13575)</p>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <p>4.6/5(13575)</p>
+                </div>
                 <span>from</span>
-                <p> $999.99 </p>
-
+                <p class="product-price"> $999.99 </p>
             </div>
+
             <div class="product-card">
                 <img src="./img/iphone14.jpeg" alt="iPhone 14">
                 <h3>Product 1</h3>
-                <p><img>4.6/5(13575)</p>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <span class="fa fa-star unchecked"></span>
+                    <p>4.6/5(13575)</p>
+                </div>
                 <span>from</span>
-                <p> $999.99 </p>
+                <p class="product-price"> $999.99 </p>
 
+            </div>
+
+            <div class="product-card">
+                <img src="./img/iphone14.jpeg" alt="iPhone 14">
+                <h3>Product 1</h3>
+                <div class="rating">
+                    
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                    
+                        <p>4.6/5(13575)</p>
+                </div>
+                <span>from</span>
+                <p class="product-price"> $999.99 </p>
             </div>
 
         </div>

@@ -1,10 +1,18 @@
 import { smartPhones, laptops } from './data.js';
 
 const smartphoneCategory = document.getElementById('smartphone-category');
-const smartPhoneModal = document.getElementById('smartphones-modal');
+const laptopCategory = document.getElementById('laptop-category');
 
-smartphoneCategory.addEventListener('click', showSmartphoneModal);
+const smartphonesModal = document.getElementById('smartphones-modal');
+const laptopsModal = document.getElementById('laptops-modal');
 
-function showSmartphoneModal() {
-    smartPhoneModal.style.display = 'block';
-}
+
+
+smartphoneCategory.addEventListener('onFiltersReceived', displaySmartphones);
+
+function displaySmartphones() {
+    smartphonesModal.classList.remove('hide');}
+
+
+
+
