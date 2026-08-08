@@ -4,9 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
   <title>BackMarketFilter</title>
 </head>
 <body>
+    <div class="master-categories" id="master-categories">
+    <p class="smartphone-category" id="smartphone-category">Smartphones</p>
+    <p class="laptop-category">Laptops</p>
+    </div>
 
+    <div class="default-modal-box" >
+        <div class="category-modal">
+            <h5 class="modal-title">Categories</h5>
+            <div class="smartphones-modal" id="smartphones-modal">
+                <div class="sub-category">
+                    <img src="img/iphones.png" alt="iPhones">
+                    <p>iPhones</p>
+                </div>
+                <div class="sub-category">
+                    <img src="./img/samsung.png" alt="Samsung Galaxy">
+                    <p>Samsung</p>
+                </div>
+                <div class="sub-category">
+                    <img src="./img/otherBrands.png" alt="Other Brands">
+                    <p>Other Brands</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-modal">
+            <h5 class="modal-title">Categories</h5>
+            <div class="laptops-modal">
+                <div class="sub-category">
+                    <img src="./img/macbooks.png" alt="MacBook">
+                    <p>MacBooks</p>
+                </div>
+                <div class="sub-category">
+                    <img src="./img/windowslaptop.png" alt="Windows Laptop">
+                    <p>Windows</p>
+                </div>
+                <div class="sub-category">
+                    <img src="./img/chromebook.png" alt="Chromebook">
+                    <p>Chromebooks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="filter">
+            <p>Price</p>
+            <p>Model</p>
+            <p>Year</p>
+        </div>
+        <div class="product">
+            <div class="product-card">
+                <img src="./img/iphone14.jpeg" alt="iPhone 14">
+                <h3>Product 1</h3>
+                <p><img>4.6/5(13575)</p>
+                <span>from</span>
+                <p>$999.99 </p>
+
+            </div>
+            <div class="product-card">
+                <img src="./img/iphone14.jpeg" alt="iPhone 14">
+                <h3>Product 1</h3>
+                <p><img>4.6/5(13575)</p>
+                <span>from</span>
+                <p> $999.99 </p>
+
+            </div>
+            <div class="product-card">
+                <img src="./img/iphone14.jpeg" alt="iPhone 14">
+                <h3>Product 1</h3>
+                <p><img>4.6/5(13575)</p>
+                <span>from</span>
+                <p> $999.99 </p>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js" ></script>
+    <script src="data.js" ></script>
 </body>
+
 </html>
