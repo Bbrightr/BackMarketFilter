@@ -19,6 +19,7 @@ p {
 
 .category-modal{
     /* display: none; */
+    display: none;
     position: absolute;
     top: 56px;
     left: 0;
@@ -37,14 +38,14 @@ p {
   border-bottom: 1px solid #990404;
 }
 
-.master-categories p {
+.master-categories a {
   margin: 0 20px;
   cursor: pointer;
   padding: 20px 0;
   /* border-bottom: 2px solid black; */
 }
 
-.master-categories p:hover {
+.master-categories a:hover {
   border-bottom: 2px solid black;
   font-weight: bold;
   cursor: pointer;
@@ -52,9 +53,7 @@ p {
 
 
 .default-modal-box {
-  /* display: flex; */
   justify-content: flex-start;
-  /* padding: 20px; */
   background-color: #f0f0f0;
 }
 
