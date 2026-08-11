@@ -1,3 +1,33 @@
+export const smartPhoneModal = [
+        {
+            name: 'iPhones',
+            photo: 'img/iphones.png'
+        },
+        {
+            name: 'Samsung',
+            photo: 'img/samsung.png'
+        },
+        {
+            name: 'Other Brands',
+            photo: 'img/otherBrands.png'
+        }
+]
+
+export const laptopModal = [
+        {
+            name: 'Macbook',
+            photo: 'img/macbooks.png'
+        },
+        {
+            name: 'Windows',
+            photo: 'img/windowslaptop.png'
+        },
+        {
+            name: 'Chrome Book',
+            photo: 'img/chromebook.png'
+        }
+]
+
 export const smartPhones = [
         { tag: 'iphone', 
         name: 'iPhone 15 Pro', 
@@ -5,7 +35,7 @@ export const smartPhones = [
         price: 1099, 
         year: 2023, 
         stars: 4.7 },
-    
+  
         { tag: 'iphone', 
         name: 'iPhone 14', 
         photo: 'img/iphone14.jpeg',
@@ -63,8 +93,7 @@ export const smartPhones = [
         stars: 4.2 }
   ]
 
-
-  export const laptops = [
+export const laptops = [
     {
         tags: 'Windows',
         name: 'Dell XPS 15',
