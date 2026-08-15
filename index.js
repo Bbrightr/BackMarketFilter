@@ -3,9 +3,12 @@ import { smartPhones, laptops } from './data.js';
 const smartphoneCategory = document.getElementById('smartphone-category');
 const laptopCategory = document.getElementById('laptop-category');
 
+const smartphoneModal = document.getElementById('smartphones-modal')
+
 
 smartphoneCategory.addEventListener('mouseover', function(){
-    const categoryDrop = `<div class="category-modal" id="smartphones-modal">
+    smartphoneModal.innerHTML = `
+        <div class="category-modal" id="smartphones-modal">
             <h5 class="modal-title">Categories</h5>
             <div class="smartphones-modal" >
                 <div class="sub-category">
